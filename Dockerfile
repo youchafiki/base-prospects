@@ -17,4 +17,4 @@ ARG JAR_FILE=target/base-prospects-0.0.1-SNAPSHOT.jar
 ADD ${JAR_FILE} base-prospects.jar
 
 # Run the jar file
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/base-prospects.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-Dspring.profiles.active=prod","-jar","/base-prospects.jar"]
