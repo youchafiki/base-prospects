@@ -16,5 +16,9 @@ ARG JAR_FILE=target/base-prospects-0.0.1-SNAPSHOT.jar
 # Add the application's jar to the container
 ADD ${JAR_FILE} base-prospects.jar
 
+COPY keycloak.crt keycloak.crt
+
+RUN keytool -v -import -noprompt -alias server -file keycloak.crt -keystore $JAVA_HOME/jre/lib/security/cacerts -storepass changeit
+
 # Run the jar file
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-Dspring.profiles.active=prod","-jar","/base-prospects.jar"]

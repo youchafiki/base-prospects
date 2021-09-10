@@ -25,8 +25,6 @@ import java.util.Arrays;
 @EnableReactiveMethodSecurity
 public class CorsGlobalConfiguration implements WebFluxConfigurer {
 
-	private static final String ACTUATOR_ENDPOINT_PATTERN = "/actuator/*";
-
 	@Bean
 	SecurityWebFilterChain springSecurityFilterChain(ServerHttpSecurity http) {
 		http
