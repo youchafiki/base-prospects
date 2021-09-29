@@ -1,4 +1,0 @@
-#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Jul 01 12:32:28 CEST 2021
-55aed794d7ffd65b3516141a50c8a821994b4add@10.49.64.5\:8080>@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1625135548132
-https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.springframework.boot\:spring-boot-starter-parent\:pom\:2.5.2 from/to central (https\://repo.maven.apache.org/maven2)\: Connect to 10.49.64.5\:8080 [/10.49.64.5] failed\: Connexion termin\u00E9e par expiration du d\u00E9lai d'attente (Connection timed out)
